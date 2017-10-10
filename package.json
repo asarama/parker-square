@@ -1,0 +1,29 @@
+{
+  "name": "parker-square",
+  "version": "1.0.0",
+  "description": "Solve a parker square",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asarama/parker-square.git"
+  },
+  "author": "Arsham Eslami <arshameslami@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asarama/parker-square/issues"
+  },
+  "homepage": "https://github.com/asarama/parker-square#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "riot": "^3.7.3"
+  }
+}

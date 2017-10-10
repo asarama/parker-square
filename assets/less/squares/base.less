@@ -1,0 +1,44 @@
+.board {
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    margin: 22vh auto;
+    border-collapse: collapse;
+    
+    tbody {
+        width: 100%;
+        height: 100%;
+        
+        tr {
+            height: 33%;
+            width: 100%;
+            
+            &:first-child {
+                border-bottom: 2px solid @main-color;
+            }
+            
+            &:last-child {
+                border-top: 2px solid @main-color;
+            }
+            
+            td {
+                width: 33%;
+                text-align: center;
+                font-size: 50px;
+                color: @main-color;
+                
+                &:first-child {
+                    border-right: 2px solid @main-color;
+                }
+                
+                &:last-child {
+                    border-left: 2px solid @main-color;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
