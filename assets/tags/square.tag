@@ -4,6 +4,8 @@
             
         <div class="leftColumn">
 
+            <button onclick="randomValues()">Randomize</button>
+            
             <table id="threeByThree" class="board">
                 <tr>
                     <td id="one"></td>
@@ -24,6 +26,6 @@
 
         </div>
 
-    </div>
-
+    </div>    
+    
 </square>
