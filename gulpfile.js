@@ -17,6 +17,13 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./assets/js'));
 });
 
+//Take all js files and build them into one js file
+gulp.task('tags', function() {
+    return gulp.src('./assets/tags/*.tag')
+        .pipe(concat('main.tags'))
+        .pipe(gulp.dest('./assets/tags'));
+});
+
 //Take all less files and build them into one minified css file
 gulp.task('less', function() {
     gulp.src('./assets/less/main.less')
@@ -33,7 +40,8 @@ gulp.task('less', function() {
 gulp.task('watch', function () {
     gulp.watch('assets/less/**/*.less', ['less']);
     gulp.watch('assets/js/*/*.js', ['scripts']);
+    gulp.watch('assets/tags/*.tag', ['tags']);
 });
 
 // Default Task
-gulp.task('default', ['less', 'scripts', 'watch']);
+gulp.task('default', ['less', 'scripts', 'tags', 'watch']);

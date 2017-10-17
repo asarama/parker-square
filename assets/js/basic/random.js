@@ -6,5 +6,6 @@ function randomValues() {
         listOfNumberElements[key].innerHTML = Math.floor(Math.random() * 101);
     }
     
+    updateSums();
     
 }
